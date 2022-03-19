@@ -6,3 +6,7 @@ variable "cluster-name" {
   default = "101d-eks-cluster"
   type    = string
 }
+variable "keypair_name" {
+  description = "KeyPair Name"
+  default     = "101d-keypair"
+}
