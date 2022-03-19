@@ -18,3 +18,5 @@ sudo usermod -a -G docker jenkins
 sudo wget -c https://downloads.apache.org/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz -P /usr/local/
 sudo tar -xvzf /usr/local/apache-maven-3.6.3-bin.tar.gz -C /usr/local/
 sudo ln -s /usr/local/apache-maven-3.6.3/bin/mvn /sbin/mvn
+curl -LO "https://dl.k8s.io/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256"
+sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl

@@ -1,7 +1,7 @@
 #
 # Outputs
 #
-/*
+
 locals {
   config_map_aws_auth = <<CONFIGMAPAWSAUTH
 
@@ -57,4 +57,3 @@ output "config_map_aws_auth" {
 output "kubeconfig" {
   value = local.kubeconfig
 }
-*/
