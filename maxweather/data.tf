@@ -4,8 +4,6 @@ data "aws_subnets" "example" {
     values = [aws_vpc.demo.id]
   }
 }
-/*
 output "first_subnet_id" {
     value = data.aws_subnets.example.ids[0]
 }
-*/
